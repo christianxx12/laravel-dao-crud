@@ -33,7 +33,10 @@ class GameController extends Controller
     {
         $data = $request->validate([
             'nombre' => 'required|string|max:255',
+            'genero' => 'required|string|max:255',
+            'plataforma' => 'required|string|max:255',
             'anio_lanzamiento' => 'required|digits:4|integer|min:1950|max:' . (date('Y') + 1),
+            'pelicula' => 'required|string|max:255',
             'empresa' => 'required|string|max:255',
         ]);
 
@@ -57,7 +60,10 @@ class GameController extends Controller
     {
         $data = $request->validate([
             'nombre' => 'required|string|max:255',
+            'genero' => 'required|string|max:255',
+            'plataforma' => 'required|string|max:255',
             'anio_lanzamiento' => 'required|digits:4|integer|min:1950|max:' . (date('Y') + 1),
+            'pelicula' => 'required|string|max:255',
             'empresa' => 'required|string|max:255',
         ]);
 

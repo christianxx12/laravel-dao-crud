@@ -12,7 +12,10 @@ class Game extends Model
     // Aquí debes agregar los campos que se pueden llenar mediante mass assignment
     protected $fillable = [
         'nombre',
+        'genero',
+        'plataforma',
         'anio_lanzamiento',
+        'pelicula',
         'empresa',
     ];
 }

@@ -28,10 +28,27 @@
         <label for="nombre">Nombre del Juego:</label>
         <input type="text" name="nombre" class="form-control" value="{{ old('nombre') }}" required>
       </div>
+      <div class="form-group">
+        <label for="genero">Genero del Juego:</label>
+        <input type="text" name="genero" class="form-control" value="{{ old('genero') }}" required>
+      </div>
+      <div class="form-group">
+        <label for="plataforma">Plataforma:</label>
+        <input type="text" name="plataforma" class="form-control" value="{{ old('plataforma') }}" required>
+      </div>
       <div class="form-group mt-3">
         <label for="anio_lanzamiento">Año de Lanzamiento:</label>
         <input type="number" name="anio_lanzamiento" class="form-control" value="{{ old('anio_lanzamiento') }}"
           required>
+      </div>
+      <div class="form-group">
+        <label for="pelicula">Pelicula:</label>
+        <select name="pelicula" class="form-control" required>
+          <option value="">Selecciona una opción</option>
+          <option value="si">Si</option>
+          <option value="no">NO</option>
+        </select>
+        <!-- <input type="text" name="pelicula" class="form-control" value="{{ old('pelicula') }}" required> -->
       </div>
       <div class="form-group mt-3">
         <label for="empresa">Empresa:</label>
